@@ -62,19 +62,14 @@ body {
     text-align: right;
 }
 
-#forside main img {
-    width: 100%;
 
-}
-
-
-#forside main {
+#forside .main {
     display: grid;
-    grid-template-rows: 10px;
-    grid-gap: 10px;
+    justify-content: flex-start;
+    min-height: 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 3px;
 
-    /*
-    grid-gap: 10px;
-    grid-template-rows: 20fr;
-*/
+
 }
