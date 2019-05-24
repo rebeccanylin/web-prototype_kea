@@ -1,0 +1,80 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAF7F7;
+}
+
+/*LOGIN - STADIG EN DEL MANGLER, MEN SIDDER RIGTIGT*/
+#login header {
+    background-color: #EA5045;
+    height: 200px;
+    position: relative;
+    text-align: center;
+
+
+}
+
+#login header img {
+    position: absolute;
+    bottom: 85px;
+    left: 130px;
+
+
+}
+
+#login main {
+    position: relative;
+    text-align: center;
+    top: 75px;
+}
+
+#login main article {
+    margin: 10px;
+}
+
+#login main figure {
+    margin-top: 100px;
+}
+
+#login main nav {
+    margin: 10px;
+}
+
+/*FORSIDEN - HER SKAL DER LAVES GRID*/
+
+#forside header {
+    background-color: #EA5045;
+    height: 50px;
+    position: relative;
+    text-align: right;
+
+}
+
+#forside header nav {
+    position: absolute;
+
+}
+
+#forside header nav img {
+    width: 20px;
+    text-align: right;
+}
+
+#forside main img {
+    width: 100%;
+
+}
+
+
+#forside main {
+    display: grid;
+    grid-template-rows: 10px;
+    grid-gap: 10px;
+
+    /*
+    grid-gap: 10px;
+    grid-template-rows: 20fr;
+*/
+}
