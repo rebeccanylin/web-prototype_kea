@@ -62,7 +62,7 @@ body {
     text-align: right;
 }
 
-
+/*SKAL KIGGE PÅ GRID I DENNE; DA DEN IKKE FUNGERE 100%*/
 #forside .main {
     display: grid;
     justify-content: flex-start;
@@ -72,4 +72,29 @@ body {
     grid-gap: 3px;
 
 
+}
+
+
+/*MENU*/
+
+#menu header {
+    background-color: #3F3140;
+    text-align: center;
+
+
+}
+
+#menu header img {
+    margin-top: 30px;
+}
+
+#menu nav {
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+#menu footer img {
+    background-color: #3F3140;
+    width: 100%;
 }
