@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ea847c;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="Bookmark" class="cls-2">
+    <rect id="Rectangle_239" data-name="Rectangle 239" class="cls-1" width="40" height="40"/>
+    <path id="Path_110" data-name="Path 110" class="cls-3" d="M0,0H36V40L18,25,0,40Z" transform="translate(2)"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="144" height="40" viewBox="0 0 144 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f58e81;
+        font-size: 40px;
+        font-family: Gibson-SemiBold, Gibson;
+        font-weight: 600;
+      }
+    </style>
+  </defs>
+  <text id="Aktuelt_" data-name="Aktuelt " class="cls-1" transform="translate(72 32)"><tspan x="-71.08" y="0">Aktuelt </tspan></text>
+</svg>

@@ -7,7 +7,7 @@ body {
     font-family: gibson;
 }
 
-/*LOGIN - STADIG EN DEL MANGLER, MEN SIDDER RIGTIGT*/
+/*LOGIN*/
 #login header {
     background-color: #EA5045;
     height: 200px;
@@ -39,8 +39,6 @@ body {
 
 }
 
-
-
 .facebook {
     background-color: #FAF7F7;
     border-radius: 25px;
@@ -52,7 +50,6 @@ body {
 
 }
 
-
 #login header img {
     position: absolute;
     bottom: 85px;
@@ -61,15 +58,10 @@ body {
 
 }
 
-
 #login main {
     position: relative;
     text-align: center;
     top: 75px;
-}
-
-#login main article {
-    margin: 10px;
 }
 
 #login main figure {
@@ -80,84 +72,80 @@ body {
     margin: 10px;
 }
 
+.glemtpassword {
+    color: black;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/*FORSIDE*/
 #forside header {
     background-color: #EA5045;
     height: 50px;
     position: relative;
 }
 
-.kea-logo1 {
+.kea_logo1 {
     position: absolute;
-    top: 40px;
+    padding: 15px;
 }
 
 #forside header nav {
-    position: relative;
+    position: absolute;
     width: 100px;
+    text-align: center;
 
 }
 
 
 .profil {
-    width: 20px;
-    align-self: flex-end;
+    padding: 15px;
+    right: 5px;
     position: absolute;
-    left: 330px;
-    top: -20px;
+
 }
 
 /*grid*/
-
 .grid-layout {
-    width: 100%;
-    top: 10vw;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-    grid-gap: 7px;
-    grid-auto-rows: minmax(15vw, auto);
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(15px, auto);
     grid-auto-flow: dense;
     padding: 5px;
-
-
-}
-
-.grid-layout img {
-    width: 100%;
-    object-fit: cover;
-
+    text-align: center;
+    top: 5px;
 }
 
 .grid-item {
-
-    padding: 0.5rem;
-    font-size: 14px;
-    /*
+    padding: 1rem;
+    font-size: 12px;
     font-weight: bold;
-    text-transform: uppercase;
-    color: #929796;
-*/
-    /*    background-color: red;*/
-    border-radius: 1px;
+
+    color: #F58E81;
+    background-color: #FFFF;
+    border-radius: 5px;
 
     &:nth-child(odd) {
-        background-color: red;
+        background-color: #FFFF;
     }
 }
 
 .span-2 {
-    grid-column-end: span 2;
-    grid-row-end: span 1;
+    grid-column-end: span 1;
+    grid-row-end: span 3;
 }
 
 .span-3 {
-    grid-column-end: span 2;
-    grid-row-end: span 1;
+    grid-column-end: span 1;
+    grid-row-end: span 2;
 }
 
 .span-4 {
-    grid-column-end: span 2;
-    grid-row-end: span 1;
+    grid-column-end: span 3;
+    grid-row-end: span 2;
 }
+
 
 
 /*MENU*/
