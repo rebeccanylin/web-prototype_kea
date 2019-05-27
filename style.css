@@ -109,12 +109,15 @@ body {
 /*grid*/
 
 .grid-layout {
+    width: 100%;
+    top: 10vw;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-    grid-gap: 10px;
+    grid-gap: 7px;
     grid-auto-rows: minmax(15vw, auto);
     grid-auto-flow: dense;
     padding: 5px;
+
 
 }
 
@@ -125,7 +128,7 @@ body {
 }
 
 .grid-item {
-    width: 100%;
+
     padding: 0.5rem;
     font-size: 14px;
     /*
@@ -142,17 +145,17 @@ body {
 }
 
 .span-2 {
-    grid-column-end: span 3;
-    grid-row-end: span 3;
+    grid-column-end: span 2;
+    grid-row-end: span 1;
 }
 
 .span-3 {
     grid-column-end: span 2;
-    grid-row-end: span 2;
+    grid-row-end: span 1;
 }
 
 .span-4 {
-    grid-column-end: span 1;
+    grid-column-end: span 2;
     grid-row-end: span 1;
 }
 
@@ -165,9 +168,17 @@ body {
 
 }
 
+#menu main {
+    text-align: center;
+    background-color: #3F3140;
+    margin-top: -20px;
+    margin-bottom: -20px;
+}
+
 
 #menu header img {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 
@@ -176,12 +187,22 @@ body {
     justify-content: space-between;
     margin-top: 20px;
     margin-bottom: 5px;
+    color: #F58E81;
+    font-weight: bold;
 }
 
-#menu footer img {
-    background-color: #3F3140;
-    width: 100%;
+.logud {
+    background-color: #F58E81;
+    position: absolute;
+    width: 385px;
+    height: 45px;
+    font-weight: bold;
+    color: #FAF7F7;
+    font-size: 1em;
 }
+
+
+
 
 /*Menuknap*/
 /*

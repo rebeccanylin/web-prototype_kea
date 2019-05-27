@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KEA Fronter</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="html" href="forside.html">
+    <link rel="alternate" href="forside.html">
 </head>
 
 <body>
@@ -14,26 +14,31 @@
         <header>
             <img src="asset_login/KEA_logo.png" alt="kea logo">
         </header>
+
         <main>
-            <div class="formgroup">
-                <label></label>
-                <input type="text" placeholder="Indtast brugernavn" class="rounded">
-            </div>
-            <div class="formgroup">
-                <label></label>
-                <input type="password" placeholder="Indtast password" class="rounded">
-            </div>
-
-
-            <figure>
-                <img src="asset_login/skygge.png" alt="mellemrum">
-            </figure>
-
-            <nav>
+            <form class="loginform" action="forside.html">
                 <div class="formgroup">
-                    <input type="submit" value="CONTINUE" class="login" a href="forside.html">
+                    <input type="text" placeholder="Indtast brugernavn" class="rounded">
                 </div>
-            </nav>
+                <div class="formgroup">
+                    <label></label>
+                    <input type="password" placeholder="Indtast password" class="rounded">
+
+                </div>
+
+
+                <figure>
+                    <img src="asset_login/skygge.png" alt="mellemrum">
+                </figure>
+
+                <nav>
+                    <div class="formgroup">
+                        <input type="submit" value="CONTINUE" class="login" a href="forside.html">
+
+                    </div>
+
+                </nav>
+            </form>
             <div class="formgroup">
                 <input type="submit" value="LOG IN WITH FACEBOOK" class="facebook" img src="asset_login/facebook-symbol.svg">
 
