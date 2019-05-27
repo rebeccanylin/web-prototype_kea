@@ -4,6 +4,7 @@
 
 body {
     background-color: #FAF7F7;
+    font-family: gibson;
 }
 
 /*LOGIN - STADIG EN DEL MANGLER, MEN SIDDER RIGTIGT*/
@@ -16,6 +17,42 @@ body {
 
 }
 
+.rounded {
+    border-radius: 25px;
+    border-style: none;
+    box-sizing: content-box;
+    width: 290px;
+    height: 45px;
+    text-align: center;
+    margin: 5px;
+    color: #EA5045;
+
+}
+
+.login {
+    background-color: #EA5045;
+    border-radius: 25px;
+    width: 290px;
+    height: 45px;
+    font-weight: bold;
+    color: #FAF7F7;
+
+}
+
+
+
+.facebook {
+    background-color: #FAF7F7;
+    border-radius: 25px;
+    width: 290px;
+    height: 45px;
+    border: solid #EA5045;
+    font-weight: bold;
+    color: #EA5045;
+
+}
+
+
 #login header img {
     position: absolute;
     bottom: 85px;
@@ -23,6 +60,7 @@ body {
 
 
 }
+
 
 #login main {
     position: relative;
@@ -42,36 +80,80 @@ body {
     margin: 10px;
 }
 
-/*FORSIDEN - HER SKAL DER LAVES GRID*/
-
 #forside header {
     background-color: #EA5045;
     height: 50px;
     position: relative;
-    text-align: right;
+}
 
+.kea-logo1 {
+    position: absolute;
+    top: 40px;
 }
 
 #forside header nav {
-    position: absolute;
+    position: relative;
+    width: 100px;
 
 }
 
-#forside header nav img {
+
+.profil {
     width: 20px;
-    text-align: right;
+    align-self: flex-end;
+    position: absolute;
+    left: 330px;
+    top: -20px;
 }
 
-/*SKAL KIGGE PÅ GRID I DENNE; DA DEN IKKE FUNGERE 100%*/
-#forside .main {
+/*grid*/
+
+.grid-layout {
     display: grid;
-    justify-content: flex-start;
-    min-height: 300px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 3px;
+    grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
+    grid-gap: 10px;
+    grid-auto-rows: minmax(15vw, auto);
+    grid-auto-flow: dense;
+    padding: 5px;
 
+}
 
+.grid-layout img {
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.grid-item {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 14px;
+    /*
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #929796;
+*/
+    /*    background-color: red;*/
+    border-radius: 1px;
+
+    &:nth-child(odd) {
+        background-color: red;
+    }
+}
+
+.span-2 {
+    grid-column-end: span 3;
+    grid-row-end: span 3;
+}
+
+.span-3 {
+    grid-column-end: span 2;
+    grid-row-end: span 2;
+}
+
+.span-4 {
+    grid-column-end: span 1;
+    grid-row-end: span 1;
 }
 
 
@@ -81,12 +163,14 @@ body {
     background-color: #3F3140;
     text-align: center;
 
-
 }
+
 
 #menu header img {
     margin-top: 30px;
 }
+
+
 
 #menu nav {
     justify-content: space-between;
@@ -98,3 +182,42 @@ body {
     background-color: #3F3140;
     width: 100%;
 }
+
+/*Menuknap*/
+/*
+.hidden {
+            display: none;
+    transform: scale(0);
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+#menuknap {
+    display: inline-block;
+
+
+}
+
+#menu {
+    list-style-type: none;
+    transition: transform .3s;
+    transform-origin: top right;
+
+}
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu.hidden {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+    }
+}
+*/
