@@ -1,24 +1,14 @@
 window.addEventListener("load", sidenVises);
 
 function sidenVises() {
-    console.log(sidenVises);
-
-    document.querySelector("#login").classList.add("hide");
-    document.querySelector("#login").removeEventListener("click", sidenVises);
-
-    document.querySelector("#forside").classList.add("hide", forside);
-    document.querySelector("#login").removeEventListener("click", forside);
+    console.log("sidenVises");
 
     document.querySelector("#menuknap").addEventListener("click", toggleMenu);
-}
 
-function forside() {
-    console.log(forside);
-
-    document.querySelector("#forside").classList.remove("hide", forside);
-
+    document.querySelector("#pil").addEventListener("click", dropDown);
 
 }
+
 
 function toggleMenu() {
     console.log("toggleMenu");
@@ -27,8 +17,23 @@ function toggleMenu() {
     let erSkjult = document.querySelector("#menu").classList.contains("hidden");
 
     if (erSkjult == true) {
-        document.querySelector("#menuknap").textContent = "☰";
+        document.getElementById("menuknap").src = "asset_afleveringer/Menu.svg";
     } else {
-        document.querySelector("#menuknap").textContent = "X";
+        document.getElementById("menuknap").src = "asset_afleveringer/x.svg";
     }
+}
+
+function dropDown() {
+    console.log("dropDown");
+    document.querySelector("#dropdown").classList.toggle("hidden");
+
+    let erSkjult = document.querySelector("#dropdown").classList.contains("hidden");
+
+    if (erSkjult == true) {
+        document.getElementById("pil").src = "asset_afleveringer/down_small_arrow.svg";
+    } else {
+        document.getElementById("pil").src = "asset_afleveringer/up.svg";
+    }
+
+
 }
