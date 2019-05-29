@@ -9,12 +9,7 @@ body {
     margin: 0;
 }
 
-/*
-ul {
-    margin: 0;
-    padding: 0;
-}
-*/
+
 
 /*LOGIN*/
 #login header {
@@ -117,7 +112,7 @@ ul {
 
 }
 
-/*grid*/
+/*grid hvor man kan trykke på afleveringer*/
 .container {
     display: grid;
     grid-template-columns: 125px 125px 125px;
@@ -135,7 +130,7 @@ ul {
 
 }
 
-.item-1 {
+.item-10 {
     text-decoration: none;
 }
 
@@ -232,6 +227,18 @@ li img {
     }
 }
 
+.logud {
+    color: white;
+    background-color: #EA847C;
+    padding: 1vw;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    position: absolute;
+
+
+}
+
 
 /*AFLEVERINGER*/
 
@@ -297,6 +304,8 @@ li img {
 
 }
 
+/*DROPDOWN I AFLEVERINGER*/
+
 #dropdown {
     background-color: white;
 
@@ -309,4 +318,10 @@ li img {
     margin-left: -10vw;
     padding: 2rem;
 
+}
+
+.link2 {
+    width: 20px;
+    position: relative;
+    top: 144vw;
 }
