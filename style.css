@@ -197,7 +197,7 @@ li img {
 
 }
 
-#menu li a {
+#menu p a {
 
     font-size: 20px;
     text-decoration: none;
@@ -205,8 +205,8 @@ li img {
 
 }
 
-#menu li {
-    margin-bottom: 60px;
+#menu p {
+    margin-bottom: 40px;
     font-size: 20px;
 
 }
@@ -227,15 +227,15 @@ li img {
     }
 }
 
-.logud {
+.logud a {
     color: white;
     background-color: #EA847C;
-    padding: 1vw;
     bottom: 0;
     left: 0;
     width: 100%;
     position: absolute;
-
+    text-decoration: none;
+    padding: 5vw;
 
 }
 
