@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+/*Definitionen af hvordan body'en generelt for alle siderne skal se ud. Hvilken skrifttype, baggrundsfarve og størelse den skal have.*/
 body {
     background-color: #FAF7F7;
     font-family: gibson;
@@ -10,8 +11,8 @@ body {
 }
 
 
-
-/*LOGIN*/
+/*--------------------------LOGIN------------------------------*/
+/*Styling af header på login side. Har postion realitive fordi, den skal ligge sig i forhold til noget andet*/
 #login header {
     background-color: #EA5045;
     height: 200px;
@@ -21,6 +22,7 @@ body {
 
 }
 
+/*Stylingen af input knapperne*/
 .rounded {
     border-radius: 25px;
     border-style: none;
@@ -33,6 +35,7 @@ body {
 
 }
 
+/*Da login skal styles anderledes, så derfor har det fået sin egen class.*/
 .login {
     background-color: #EA5045;
     border-radius: 25px;
@@ -43,6 +46,7 @@ body {
 
 }
 
+/*Da facebook skal styles anderledes, så derfor har det fået sin egen class.*/
 .facebook {
     background-color: #FAF7F7;
     border-radius: 25px;
@@ -54,6 +58,7 @@ body {
 
 }
 
+/*Hvis der ikke har relative på login header, havde denne ikke kunne ligge absolut i forhold til headeren. Postion gør også at den kan placeres, der hvor man præcist ønsker der. */
 #login header img {
     position: absolute;
     bottom: 85px;
@@ -62,39 +67,45 @@ body {
 
 }
 
+#login main figure {
+    margin-top: 100px;
+}
+
+/*Main er hele login siden, den hvor teksten skal centres. Og skal placeres, så den ligger realtivt i forhold til de andre class og id på siden*/
 #login main {
     position: relative;
     text-align: center;
     top: 75px;
 }
 
-#login main figure {
-    margin-top: 100px;
-}
-
+/*Placeres boxene i med en margin i mellem hinanden*/
 #login main nav {
     margin: 10px;
 }
 
+/*Styling af classen*/
 .glemtpassword {
     color: black;
     font-size: 12px;
     margin-top: 10px;
 }
 
+/*Styling af classen*/
 .huskmig {
     font-size: 11px;
     margin-top: 10px;
 }
 
-/*FORSIDE*/
+/*-----------------------FORSIDE----------------------------*/
+/*Styling og placering af header. Er relative, så den kan få en størelse, og gøre det muligt, at de andre class kan ligge sammen med den*/
 #forside header {
     background-color: #EA5045;
     width: 100vw;
-    height: 10vw;
+    height: 12vw;
     position: relative;
 }
 
+/*Styling og placering i forhold til headeren*/
 .kea_logo1 {
     position: absolute;
     padding: 15px;
@@ -117,13 +128,15 @@ body {
 }
 
 /*grid hvor man kan trykke på afleveringer*/
+/*Denne container skaber grid, og hvordan tingene ligger iforhold til hinanden. Dette sker også i items*/
 .container {
     display: grid;
-    grid-template-columns: 125px 125px 125px;
+    grid-template-columns: 120px 120px 120px;
     grid-template-rows: 125px 125px 125px 125px 125px;
-    grid-gap: 10px;
+    grid-gap: 7.5px;
 }
 
+/*Styling af boksene i grid*/
 .item {
     background-color: white;
     display: grid;
@@ -149,7 +162,8 @@ body {
 }
 
 
-/*Menuknap*/
+/*------------------------Menu-----------------------------*/
+/*Deffinerer hvordan stylingen af teksten ser ud*/
 #menuknap {
     position: relative;
     left: 80vw;
@@ -159,6 +173,7 @@ body {
 
 }
 
+/*Dette gør at menuen er gemt, før den bliver trykket på. Så denne funktion taler til html hidden*/
 .hidden {
     display: none;
     transform: scale(0);
@@ -167,21 +182,25 @@ body {
 
 }
 
+/*Menuknappen ligger sig foran alle de andre ting. Z-indexet har 100 fordi den bare skal ligge sig øverst altid. Så hvis man sætter en anden z-index ind, skal den enten være større eller mindre end 100*/
+
 #menuknap {
     display: inline-block;
     z-index: 100;
 
 }
 
-li img {
+/*Dette er KEA logo. Her bliver størrelse og placering valgt*/
+#menu p img {
     width: 40vw;
     position: relative;
     top: 30px;
     text-align: center;
+    margin-bottom: 10vw;
 }
 
 
-
+/*Dette er selve menuen, hvordan den skal se ud, og hvordan den ligger sig i forhold til andet*/
 #menu {
     list-style-type: none;
     transition: transform .3s;
@@ -201,6 +220,7 @@ li img {
 
 }
 
+/*Styling af teksten i meuen som er den man kan trykke på. Altså a- tagget*/
 #menu p a {
 
     font-size: 20px;
@@ -209,12 +229,15 @@ li img {
 
 }
 
+/*Alle p tekster - placering og størelse*/
+
 #menu p {
     margin-bottom: 40px;
     font-size: 20px;
 
 }
 
+/*Dette gør at menukanppen kun bliver vist optil 600px. Hvis den bliver over det, vises den ikke mere. Derfor bliver brugermenuen vist i moblie first*/
 @media only screen and (min-width: 600px) {
 
     #menuknap {
@@ -231,6 +254,7 @@ li img {
     }
 }
 
+/*Styling og placering af logud a-tagget. */
 .logud a {
     color: white;
     background-color: #EA847C;
@@ -246,17 +270,18 @@ li img {
 
 /*AFLEVERINGER*/
 
-
+/*Samme header som i forside*/
 
 #afleveringer header {
 
     background-color: #EA5045;
     width: 100vw;
-    height: 10vw;
+    height: 12vw;
     position: relative;
 
 }
 
+/*Styling og placering*/
 #afleveringer header nav {
     position: absolute;
     width: 100px;
@@ -266,11 +291,15 @@ li img {
 
 #afleveringer main h3 {
     left: -20px;
+    margin-left: 2vw;
+
 
 }
 
 #afleveringer h4 {
     color: #EA5045;
+    margin-left: 2vw;
+
 }
 
 
@@ -280,6 +309,7 @@ li img {
     background-color: #F2F1F0;
     padding: 5px;
     font-size: 13px;
+
 
 }
 
@@ -291,6 +321,7 @@ li img {
     font-size: 13px;
     margin-top: 10px;
 
+
 }
 
 
@@ -299,6 +330,7 @@ li img {
     left: 350px;
     margin-top: -30px;
 
+
 }
 
 #afleveringer .box2 img {
@@ -306,9 +338,10 @@ li img {
     right: 30px;
     margin-top: -30px;
 
+
 }
 
-/*DROPDOWN I AFLEVERINGER*/
+/*--------------------DROPDOWN I AFLEVERINGER----------------*/
 
 #dropdown {
     background-color: white;
@@ -324,8 +357,18 @@ li img {
 
 }
 
+#pil {
+    transform: scale(1.5);
+}
+
+.pil {
+    transform: scale(1.5);
+}
+
+
+
 .link2 {
     width: 20px;
     position: relative;
-    top: 144vw;
+    top: 150vw;
 }
